@@ -4,10 +4,12 @@ import java.util.Scanner;
 public class ShuyiJLib {
     public static void main(String [] args)
     {
-        System.out.println("Select Level");
         Scanner level = new Scanner(System.in);
+        System.out.println("What your name?");
+        String userName = level.nextLine();
+        System.out.println("Select Level");
         int levelInt = level.nextInt();
-        System.out.println("you have selected" + "" + levelInt);
+        System.out.println(userName + " "+"you have selected" + " " +"level" + " " + levelInt);
         if(levelInt ==1 )
         {
            levelInt = 10;
@@ -33,7 +35,7 @@ public class ShuyiJLib {
         {
             if (guessNum == randomInt1)
             {
-                System.out.println("You Won");
+                System.out.println( userName + " "+ "You Won");
             }
             else if (guessNum < randomInt1)
             {
